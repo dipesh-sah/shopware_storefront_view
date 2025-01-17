@@ -43,9 +43,9 @@ export default defineNuxtConfig({
   },
 
   shopware: {
-    accessToken: "SWSCVZDWAKE4V2XUNKR3ALBITW",
-    endpoint: "https://shoptest.bay20.in/public/head/store-api/",
-    devStorefrontUrl: "https://shoptest.bay20.in/public/head",
+    accessToken: process.env.Access_key,
+    endpoint: `${process.env.baseUrl}/store-api/`,
+    devStorefrontUrl: process.env.baseUrl,
   },
 
   routeRules: {
